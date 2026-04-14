@@ -287,15 +287,48 @@
             .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
             .stats-bar { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 640px) {
-            nav { display: none; flex-direction: column; gap: 16px; padding: 20px 0; }
-            nav.open { display: flex; }
-            .mobile-toggle { display: block; }
-            .section { padding: 60px 0; }
-            .services-grid { grid-template-columns: 1fr; }
-            .services-grid.grid-2 { grid-template-columns: 1fr; max-width: 420px; }
-            .stats-bar { grid-template-columns: 1fr; }
-            .flagman-card { padding: 32px 24px; }
+        @media (max-width: 768px) {
+            html { font-size: 11px; }
+            .container { padding: 0 10px; }
+            .section { padding: 32px 0; }
+            .hero .section-title { font-size: clamp(20px, 6vw, 32px); }
+            .hero .section-subtitle { font-size: 13px; }
+            header .container {
+                height: auto; padding: 8px 10px;
+            }
+            nav {
+                display: flex !important; flex-direction: row; flex-wrap: nowrap;
+                justify-content: center; gap: 4px 10px; padding: 0;
+            }
+            nav a { font-size: 11px; white-space: nowrap; }
+            .nav-cta { padding: 6px 16px; font-size: 11px; }
+            .mobile-toggle { display: none !important; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .services-grid.grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
+            .service-card-body { padding: 8px 8px 12px; }
+            .service-card-top { flex-direction: column; align-items: flex-start; margin-bottom: 6px; }
+            .service-card-price { margin-left: 0; margin-top: 4px; }
+            .service-card-title { font-size: 12px; }
+            .service-card-desc { font-size: 10px; line-height: 1.45; }
+            .service-card-price { font-size: 11px; padding: 3px 8px; }
+            .service-card-btn { padding: 7px; font-size: 11px; }
+            .category-title { font-size: 13px; margin: 24px 0 10px; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); }
+            .flagman-card { padding: 16px 12px; }
+            .flagman-card h3 { font-size: 14px; }
+            .flagman-price { font-size: 18px; }
+            .stat-number { font-size: 20px; }
+            .stat-desc { font-size: 11px; }
+        }
+        @media (max-width: 420px) {
+            html { font-size: 10px; }
+            nav a { font-size: 10px; }
+            .nav-cta { padding: 5px 12px; font-size: 10px; }
+            .services-grid { gap: 6px; }
+            .service-card-body { padding: 6px 6px 10px; }
+            .service-card-title { font-size: 11px; }
+            .service-card-desc { font-size: 9px; }
+            .service-card-price { font-size: 10px; }
         }
 
         /* ── Fade-in ── */
@@ -601,7 +634,7 @@
                     <div class="contact-detail-icon">✈️</div>
                     <div>
                         <div style="font-size:13px;color:#71717a;">Telegram</div>
-                        <span>@zorkovivan</span>
+                        <span>@susichhh</span>
                     </div>
                 </div>
                 <div class="contact-detail">
@@ -615,7 +648,7 @@
                     <div class="contact-detail-icon">📱</div>
                     <div>
                         <div style="font-size:13px;color:#71717a;">WhatsApp</div>
-                        <span>+7 (999) 123-45-67</span>
+                        <span>+7 (993) 902-34-25</span>
                     </div>
                 </div>
                 <div class="contact-detail">
@@ -643,7 +676,7 @@
                     </div>
                     <div class="form-row">
                         <label for="phone">Телефон / Telegram</label>
-                        <input type="text" id="phone" name="phone" placeholder="+7 (999) 123-45-67 или @username">
+                        <input type="text" id="phone" name="phone" placeholder="+7 (993) 902-34-25 или @username">
                     </div>
                     <div class="form-row">
                         <label for="business">Ниша бизнеса</label>
